@@ -76,7 +76,7 @@ router.patch('/:id', async(req, res) => {
 })
 
 //Delete specific alien data
-router.delete(':/id', async(res,req)=> {
+router.delete('/:id', async(res,req)=> {
     const {tech,name,sub} = req.body;
 
     const alien = new Alien({
